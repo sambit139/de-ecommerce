@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: gold
+    schema: default
+    description: "Gold analytics views exposed through Spark Thrift Server"
+
+    tables:
+      - name: gold_booking_analysis
+
+      - name: gold_category_cart_analysis
+
+      - name: gold_event_summary
+
+      - name: gold_session_summary

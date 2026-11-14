@@ -1,0 +1,51 @@
+{
+    "path_count": 141,
+    "parsed_path_count": 141,
+    "static_analysis_path_count": 6,
+    "static_analysis_parsed_path_count": 6,
+    "is_partial_parse_enabled": true,
+    "is_static_analysis_enabled": true,
+    "read_files_elapsed": 0.9135784999998577,
+    "load_macros_elapsed": 0.5718954000003578,
+    "parse_project_elapsed": 0.5483344000003854,
+    "patch_sources_elapsed": 0.020418899999640416,
+    "process_manifest_elapsed": 0.024803800000881893,
+    "load_all_elapsed": 2.157995999999912,
+    "projects": [
+        {
+            "project_name": "ecommerce_analytics",
+            "elapsed": 0.5460504999991826,
+            "parsers": [
+                {
+                    "parser": "model",
+                    "elapsed": 0.201102400000309,
+                    "parsed_path_count": 6
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.34357509999972535,
+                    "parsed_path_count": 2
+                }
+            ],
+            "parsed_path_count": 8
+        },
+        {
+            "project_name": "dbt_spark",
+            "elapsed": 0.000860399999510264,
+            "parsers": [],
+            "parsed_path_count": 0
+        },
+        {
+            "project_name": "dbt",
+            "elapsed": 0.0009686000012152363,
+            "parsers": [
+                {
+                    "parser": "doc",
+                    "elapsed": 0.00017950000074051786,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 1
+        }
+    ]
+}

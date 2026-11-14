@@ -1,0 +1,3 @@
+payment_status,total_bookings,unique_booking_sessions,booking_status_share_pct
+SUCCESS,76658,76658,95.71
+FAILED,3432,3432,4.29

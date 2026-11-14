@@ -1,0 +1,86 @@
+﻿version: 2
+
+models:
+  - name: mart_booking_performance
+    description: "Booking totals and payment status distribution"
+    columns:
+      - name: payment_status
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['SUCCESS', 'FAILED']
+      - name: total_bookings
+        data_tests:
+          - not_null
+      - name: unique_booking_sessions
+        data_tests:
+          - not_null
+
+  - name: mart_event_performance
+    description: "Event counts and percentage distribution"
+    columns:
+      - name: event_name
+        data_tests:
+          - not_null
+          - unique
+      - name: total_events
+        data_tests:
+          - not_null
+      - name: unique_sessions
+        data_tests:
+          - not_null
+      - name: event_share_pct
+        data_tests:
+          - not_null
+
+  - name: mart_category_cart_performance
+    description: "Category-wise cart activity and item price analysis"
+    columns:
+      - name: mastercategory
+        data_tests:
+          - not_null
+      - name: subcategory
+        data_tests:
+          - not_null
+      - name: articletype
+        data_tests:
+          - not_null
+      - name: cart_events
+        data_tests:
+          - not_null
+      - name: unique_cart_sessions
+        data_tests:
+          - not_null
+      - name: total_quantity
+        data_tests:
+          - not_null
+      - name: observed_cart_item_price_sum
+        data_tests:
+          - not_null
+      - name: average_cart_event_item_price
+        data_tests:
+          - not_null
+      - name: cart_activity_rank
+        data_tests:
+          - not_null
+          - unique
+
+  - name: mart_session_metrics
+    description: "Overall session activity metrics"
+    columns:
+      - name: total_sessions
+        data_tests:
+          - not_null
+      - name: sessions_with_cart
+        data_tests:
+          - not_null
+      - name: sessions_with_booking
+        data_tests:
+          - not_null
+      - name: sessions_with_both_events
+        data_tests:
+          - not_null
+      - name: average_events_per_session
+        data_tests:
+          - not_null
